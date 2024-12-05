@@ -7,7 +7,7 @@ ThemeData lightTheme() {
   return base.copyWith(
     scaffoldBackgroundColor: Coloors.backgroundLight,
     colorScheme: base.colorScheme.copyWith(
-      background: Coloors.backgroundLight,
+      surface: Coloors.backgroundLight,
     ),
     extensions: [
       CustomThemeExtension.lightMode,
@@ -19,6 +19,15 @@ ThemeData lightTheme() {
         splashFactory: NoSplash.splashFactory,
         elevation: 0,
         shadowColor: Colors.transparent,
+      ),
+    ),
+    bottomSheetTheme: const BottomSheetThemeData(
+      backgroundColor: Coloors.backgroundLight,
+      modalBackgroundColor: Coloors.backgroundLight,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(
+          top: Radius.circular(20),
+        ),
       ),
     ),
   );

@@ -7,7 +7,7 @@ ThemeData darkTheme() {
   return base.copyWith(
     scaffoldBackgroundColor: Coloors.backgroundDark,
     colorScheme: base.colorScheme.copyWith(
-      background: Coloors.backgroundDark,
+      surface: Coloors.backgroundDark,
     ),
     extensions: [
       CustomThemeExtension.darkMode,
@@ -19,6 +19,15 @@ ThemeData darkTheme() {
         splashFactory: NoSplash.splashFactory,
         elevation: 0,
         shadowColor: Colors.transparent,
+      ),
+    ),
+    bottomSheetTheme: const BottomSheetThemeData(
+      backgroundColor: Coloors.greyBackground,
+      modalBackgroundColor: Coloors.greyBackground,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(
+          top: Radius.circular(20),
+        ),
       ),
     ),
   );
