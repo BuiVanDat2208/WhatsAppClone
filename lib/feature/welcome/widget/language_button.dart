@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/common/extension/custom_theme_extension.dart';
-import 'package:whatsapp_clone/common/utils/coloors.dart';
 
 class LanguageButton extends StatelessWidget {
   const LanguageButton({
