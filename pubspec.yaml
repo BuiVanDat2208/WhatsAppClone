@@ -35,6 +35,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  flutter_native_splash: ^2.4.3
 
 dev_dependencies:
   flutter_test:
@@ -45,6 +46,22 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
+
+  flutter_native_splash:
+    color: "#FFFFFF"
+    color_dark: "#111B21"
+    image: assets/images/whatsapp_light.png
+    image_dark: assets/images/whatsapp_dark.png
+    android: true
+    ios: true
+    android_12: 
+      color: "#FFFFFF"
+      color_dark: "#111B21"
+      image: assets/images/whatsapp_light.png
+      image_dark: assets/images/whatsapp_dark.png
+      icon_background_color: "#FFFFFF"
+      icon_background_color_dark: "#111B21"
+
   flutter_lints: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
