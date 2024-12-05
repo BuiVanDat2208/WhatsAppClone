@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/common/extension/custom_theme_extension.dart';
-import 'package:whatsapp_clone/common/utils/coloors.dart';
 import 'package:whatsapp_clone/common/widget/custom_elevated_button.dart';
 import 'package:whatsapp_clone/feature/welcome/widget/language_button.dart';
 import 'package:whatsapp_clone/feature/welcome/widget/privacy_and_terms.dart';
@@ -30,32 +29,24 @@ class WelcomePage extends StatelessWidget {
           ),
           const SizedBox(height: 40),
           Expanded(
-            child: Column(
-              children: [
-                const Text(
-                  'Welcome to WhatsApp',
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w500,
-                  ),
+              child: Column(
+            children: [
+              const Text(
+                'Welcome to WhatsApp',
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
                 ),
-
-                // Terms when logging into the system
-                const PrivacyAndTerms(),
-
-                // Custom button
-                CustomElevatedButton(
-                  onPressed: () {},
-                  text: "AGREE AND CONTINUE",
-                ),
-
-                const SizedBox(height: 50),
-
-                // LanguageButton
-                const LanguageButton(),
-              ],
-            ),
-          ),
+              ),
+              const PrivacyAndTerms(),
+              CustomElevatedButton(
+                onPressed: () {},
+                text: 'AGREE AND CONTINUE',
+              ),
+              const SizedBox(height: 50),
+              const LanguageButton(),
+            ],
+          ))
         ],
       ),
     );
