@@ -22,7 +22,7 @@ class WelcomePage extends StatelessWidget {
                 ),
                 child: Image.asset(
                   'assets/images/circle.png',
-                  color: context.theme.circleImageColor,
+                  color: context.theme.blueColor,
                 ),
               ),
             ),
