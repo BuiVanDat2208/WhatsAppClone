@@ -48,6 +48,11 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^4.0.0
+  firebase_core: ^3.8.1
+  firebase_auth: ^5.3.4
+  firebase_storage: ^12.3.7
+  cloud_firestore: ^5.5.1
+  flutter_riverpod: ^2.6.1
 
 flutter_native_splash: # Phần cấu hình gói, phải nằm ngoài `dependencies`
   color: "#FFFFFF" # Màu nền cho màn hình sáng
