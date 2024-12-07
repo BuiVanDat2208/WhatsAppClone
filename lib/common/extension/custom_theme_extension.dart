@@ -14,6 +14,7 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
     blueColor: Coloors.blueLight,
     langBtnColor: Color(0xFFF7F8FA),
     langBtnHighlightColor: Color(0xFFE8E8ED),
+    authAppbarTextColor: Coloors.greenLight,
   );
 
   static const darkMode = CustomThemeExtension(
@@ -22,6 +23,7 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
     blueColor: Coloors.blueDark,
     langBtnColor: Color(0xFF182229),
     langBtnHighlightColor: Color(0xFF09141A),
+    authAppbarTextColor: Color(0xFFFFF9ED),
   );
 
   final Color? circleImageColor;
@@ -29,13 +31,16 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
   final Color? blueColor;
   final Color? langBtnColor;
   final Color? langBtnHighlightColor;
+  final Color? authAppbarTextColor;
 
-  const CustomThemeExtension(
-      {this.circleImageColor,
-      this.greyColor,
-      this.blueColor,
-      this.langBtnColor,
-      this.langBtnHighlightColor});
+  const CustomThemeExtension({
+    this.circleImageColor,
+    this.greyColor,
+    this.blueColor,
+    this.langBtnColor,
+    this.langBtnHighlightColor,
+    this.authAppbarTextColor,
+  });
 
   @override
   ThemeExtension<CustomThemeExtension> copyWith({
@@ -44,6 +49,7 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
     Color? blueColor,
     Color? langBtnColor,
     Color? langBtnHighlightColor,
+    Color? authAppbarTextColor,
   }) {
     return CustomThemeExtension(
       circleImageColor: circleImageColor ?? this.circleImageColor,
@@ -52,6 +58,7 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
       langBtnColor: langBtnColor ?? this.langBtnColor,
       langBtnHighlightColor:
           langBtnHighlightColor ?? this.langBtnHighlightColor,
+      authAppbarTextColor: authAppbarTextColor ?? this.authAppbarTextColor,
     );
   }
 
@@ -63,6 +70,8 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
       circleImageColor: Color.lerp(circleImageColor, other.circleImageColor, t),
       greyColor: Color.lerp(greyColor, other.greyColor, t),
       blueColor: Color.lerp(blueColor, other.blueColor, t),
+      authAppbarTextColor:
+          Color.lerp(authAppbarTextColor, other.authAppbarTextColor, t),
       langBtnColor: Color.lerp(langBtnColor, other.langBtnColor, t),
       langBtnHighlightColor:
           Color.lerp(langBtnHighlightColor, other.langBtnHighlightColor, t),
