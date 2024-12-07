@@ -29,3 +29,7 @@ flutter_native_splash:
 
 Run command to create splash screen: After configuration is complete, run the following command to apply:
 # flutter pub run flutter_native_splash:create
+
+
+///
+# flutter pub add country_picker
