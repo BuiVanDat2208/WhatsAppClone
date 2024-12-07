@@ -39,11 +39,13 @@ Instructions for using flutter_native_splash
 Add package: Run command:
 # flutter pub add flutter_native_splash
 Configuration in pubspec.yaml: Add configuration for splash screen to pubspec.yaml file:
+```json
 flutter_native_splash:
   color: "#FFFFFF" # Background color
   image: assets/splash.png # Path to logo image
   android: true # Enable splash for Android
   ios: true # Enable splash for iOS
+```
 
 Run command to create splash screen: After configuration is complete, run the following command to apply:
 # flutter pub run flutter_native_splash:create
@@ -82,7 +84,7 @@ How to use it:
     ````
 # 2. Initialize Firebase in Your Flutter App
   - Add the following to your main file (**main.dart**)
-    Ex:
+    **Ex:**
       ```flutter
       import 'package:flutter/material.dart';
       import 'package:firebase_core/firebase_core.dart';
@@ -109,17 +111,16 @@ How to use it:
 ## 1. firebase_core
   - Purpose: Provides core functionalities required to connect your Flutter app to Firebase services. 
   - Required for: Initializing Firebase in your Flutter project. 
-  `await Firebase.initializeApp(); // Must call this before using any Firebase service`
+  ```flutter await Firebase.initializeApp(); // Must call this before using any Firebase service```
 ## 2. firebase_auth
   - Purpose: Handles user authentication with Firebase Authentication (email/password, Google Sign-In, Facebook, etc.).
   - Features:
     * User sign-up and login.
     * Password recovery.
     * Managing user sessions.
-    `import 'package:firebase_auth/firebase_auth.dart';
-
+    ```flutter 
+    import 'package:firebase_auth/firebase_auth.dart';
     FirebaseAuth auth = FirebaseAuth.instance;
-
     // Sign up a new user
     Future<void> signUp() async {
       try {
@@ -144,16 +145,15 @@ How to use it:
       } catch (e) {
         print("Error: $e");
       }
-    }`
+    }```
 ## 3. Firebase_storage
   - Purpose: Enables uploading and downloading files (like images, videos, documents) to/from Firebase Storage.
   - Features:
     * Store user profile pictures or application assets.
     * Access files through download URLs.
-    `import 'package:firebase_storage/firebase_storage.dart';
-
+    ```flutter 
+      import 'package:firebase_storage/firebase_storage.dart';
       FirebaseStorage storage = FirebaseStorage.instance;
-
       // Upload a file
       Future<void> uploadFile(String filePath) async {
         try {
@@ -173,17 +173,16 @@ How to use it:
         } catch (e) {
           print("Error: $e");
         }
-      }`
+      }```
 ## 4. cloud_firebase
   - Purpose: Manages the NoSQL database provided by Firebase for real-time data storage and synchronization.
   - Features:
       * Store and retrieve structured data.
       * Real-time updates.
       * Offline capabilities.
-    `import 'package:cloud_firestore/cloud_firestore.dart';
-
+    ```flutter
+    import 'package:cloud_firestore/cloud_firestore.dart';
     FirebaseFirestore firestore = FirebaseFirestore.instance;
-
     // Add a new document to a collection
     Future<void> addData() async {
       try {
@@ -208,4 +207,4 @@ How to use it:
       } catch (e) {
         print("Error: $e");
       }
-    }`
+    }```
