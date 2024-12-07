@@ -83,7 +83,8 @@ How to use it:
 # 2. Initialize Firebase in Your Flutter App
   - Add the following to your main file (**main.dart**)
     Ex:
-      `import 'package:flutter/material.dart';
+      ```flutter
+      import 'package:flutter/material.dart';
       import 'package:firebase_core/firebase_core.dart';
       void main() async {
         WidgetsFlutterBinding.ensureInitialized();
@@ -100,7 +101,8 @@ How to use it:
             ),
           );
         }
-      }`
+      }
+      ```
   - Run the app to ensure Firebase is correctly initialized.
 
 # 3. Purpose of Each Library
