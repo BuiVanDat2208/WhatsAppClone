@@ -1,7 +1,9 @@
 {
     "java.compile.nullAnalysis.mode": "automatic",
     "cSpell.words": [
+        "Appbar",
         "Coloors",
+        "Icom",
         "Viet"
     ]
 }
